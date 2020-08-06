@@ -31,6 +31,11 @@ void CoinGame(){
     cout<<"Heads : "<<head_cnt<<", ";
     cout<<"Tails: "<<tail_cnt<<endl;
 
+    if(head_cnt > tail_cnt){
+        cout<<"You won!"<<endl;
+    }else{
+        cout<<"You lost!"<<endl;
+    }
 }
 
 int main(){
