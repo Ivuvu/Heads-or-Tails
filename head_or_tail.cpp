@@ -41,8 +41,6 @@ void AskName(){
     cout<<"Hello, "<<name<<"!"<<endl;
 }
 
-
-
 int main(){
     AskName();
     CoinGame();
