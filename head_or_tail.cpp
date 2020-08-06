@@ -7,7 +7,7 @@ inline void InitRand(){
     srand((unsigned int)time(NULL));
 }
 
-void CoinGame(){
+int main(){
     int head_cnt,tail_cnt;
     head_cnt = tail_cnt = 0;
 
@@ -31,19 +31,10 @@ void CoinGame(){
     cout<<"Heads : "<<head_cnt<<", ";
     cout<<"Tails: "<<tail_cnt<<endl;
 
-}
-
-void AskName(){
-    string name;
-    cout<<"Who are you?"<<endl;
-    cout<<"> ";
-    cin>>name;
-    cout<<"Hello, "<<name<<"!"<<endl;
-}
-
-
-
-int main(){
-    AskName();
-    CoinGame();
+    if( head_cnt > tail_cnt){
+        cout<<"You won!"<<endl;
+    }else{
+        cout<<"You lost"<<endl;
+    }
+    
 }
