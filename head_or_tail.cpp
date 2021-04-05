@@ -7,6 +7,8 @@ inline void InitRand(){
     srand((unsigned int)time(NULL));
 }
 
+//コインゲーム
+
 void CoinGame(string name){
     int head_cnt,tail_cnt;
     head_cnt = tail_cnt = 0;
